@@ -21,11 +21,11 @@ File extension: .tf
 AWS Provider: https://registry.terraform.io/providers/hashicorp/aws/latest/docs   
 Region: means where AWS data center is, check your region from your AWS management console.  
 
-Configure the AWS Provider
-provider "aws" {
-  region = "us-west-1"
-  access_key = "AKIAZZX5VVO37JDJNVUO"
-  secret_key = "hnrVZBLC49heBI3jUbp36IYdcovfTrsJxxBon5l5"
+Configure the AWS Provider  
+provider "aws" {  
+  region = "us-west-1"  
+  access_key = ""  
+  secret_key = ""  
 }
 
 
@@ -42,13 +42,13 @@ There are two ways- you can do it from AWS console or from terraform.
      -   	Reference resources [when you create a subnet under a vpc you can reference that vpc using vpc id like: vpc_id     = aws_vpc.first-vpc.id]  
 
 
-resource "aws_instance" "first-server" {
-  ami           = "ami-01fd3b69ad00fd21c"
-  instance_type = "t2.micro"
+resource "aws_instance" "first-server" {  
+  ami           = "ami-01fd3b69ad00fd21c"  
+  instance_type = "t2.micro"  
  
-  tags = {
-    Name = "ubuntu server"
-  }
+  tags = {  
+    Name = "ubuntu server"  
+  }  
 
 
 Terraform Plan:
@@ -60,13 +60,13 @@ The $terraform apply command executes the actions proposed in a Terraform plan t
 AWS VPC:
 Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined.
 
-resource "aws_vpc" "first-vpc" {
-  cidr_block       = "10.0.0.0/16"
+resource "aws_vpc" "first-vpc" {  
+  cidr_block       = "10.0.0.0/16"  
  
-  tags = {
-    Name = "production"
-  }
-}
+  tags = {  
+    Name = "production"   
+  }  
+}  
 
 
 Terraform files:
