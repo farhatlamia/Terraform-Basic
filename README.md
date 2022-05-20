@@ -1,15 +1,15 @@
 # Terraform - Automate your AWS cloud infrastructure
 
-Github: https://github.com/Sanjeev-Thiyagarajan/Terraform-Crash-Course
+Github: https://github.com/Sanjeev-Thiyagarajan/Terraform-Crash-Course  
 
 # AWS Setup:
-Go to https://aws.amazon.com/  and create an aws account following the instructions.
+Go to https://aws.amazon.com/  and create an aws account following the instructions.  
 
 # Install Terraform on Windows Machine:
-1. Download terraform file.
-2. Unzip it.
-3. Add the terraform.exe file location path in user level environment variable.
-4. Type $terraform -version to check if terraform is installed properly or not.
+1. Download terraform file.  
+2. Unzip it.  
+3. Add the terraform.exe file location path in user level environment variable.  
+4. Type $terraform -version to check if terraform is installed properly or not.  
 
 # Visual Studio Code setup:
 Download VScode from https://code.visualstudio.com/ 
@@ -75,15 +75,15 @@ terraform.tfstate=> whenever we create any resource terraform stores that in thi
 
 
 # Project Step:
-1.Create vpc.
-2.Create internet gateway.
-3.Create custom route table.
-4.Create a subnet.
-5.Associate subnet with route table.
-6.Create security group to allow port 22,88,443.
-7.Create a network interface with an IP in the subnet that was created in step 4.
-8.Assign an elastic IP to the network interface created in step 7.
-9.Create ubuntu server and install/enable apache2.
+1.Create vpc.  
+2.Create internet gateway.  
+3.Create custom route table.  
+4.Create a subnet.  
+5.Associate subnet with route table.  
+6.Create security group to allow port 22,88,443.  
+7.Create a network interface with an IP in the subnet that was created in step 4.  
+8.Assign an elastic IP to the network interface created in step 7.  
+9.Create ubuntu server and install/enable apache2.  
 
 Terraform state commands:
 
