@@ -1,27 +1,27 @@
-Terraform Course - Automate your AWS cloud infrastructure
+# Terraform - Automate your AWS cloud infrastructure
 
 Github: https://github.com/Sanjeev-Thiyagarajan/Terraform-Crash-Course
 
-AWS Setup:
+# AWS Setup:
 Go to https://aws.amazon.com/  and create an aws account following the instructions.
 
-Install Terraform on Windows Machine:
+# Install Terraform on Windows Machine:
 1. Download terraform file
 2. Unzip it
 3. Add the terraform.exe file location path in user level environment variable
 4. Type $terraform -version to check if terraform is installed properly or not.
 
-Visual Studio Code setup:
+# Visual Studio Code setup:
 Download VScode from https://code.visualstudio.com/ 
 
-Terraform Overview:
+# Terraform Overview:
  
 Language: hashicorp configuration language
 File extension: .tf
 AWS Provider: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 Region: means where AWS data center is, check your region from your AWS management console.
 
-# Configure the AWS Provider
+Configure the AWS Provider
 provider "aws" {
   region = "us-west-1"
   access_key = "AKIAZZX5VVO37JDJNVUO"
@@ -74,8 +74,7 @@ Terraform files:
 terraform.tfstate=> whenever we create any resource terraform stores that in this state file
 
 
-
-Practice Project:
+# Project Step:
 1.Create vpc
 2.Create internet gateway
 3.Create custom route table
