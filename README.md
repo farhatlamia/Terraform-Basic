@@ -39,7 +39,7 @@ There are two ways- you can do it from AWS console or from terraform.
 - execute command - [terraform init, terraform plan, terraform apply]  
      - 	Modify resources [ add tags if you want to put name of your instance]  
      - 	Destroy resources [$terraform destroy]  
-     -   	Reference resources [when you create a subnet under a vpc you can reference that vpc using vpc id like: vpc_id     = aws_vpc.first-vpc.id]  
+     -  Reference resources [when you create a subnet under a vpc you can reference that vpc using vpc id like: vpc_id = aws_vpc.first-vpc.id]  
 
 
 resource "aws_instance" "first-server" {  
