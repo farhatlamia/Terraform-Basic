@@ -85,7 +85,7 @@ terraform.tfstate=> whenever we create any resource terraform stores that in thi
 8.Assign an elastic IP to the network interface created in step 7.  
 9.Create ubuntu server and install/enable apache2.  
 
-Terraform state commands:  
+# Terraform state commands:  
 
 $terraform state list => output will be all states you created.  
 $terraform state show (put name of a state) => will provide details of any particular state.  
@@ -93,7 +93,7 @@ $terraform state show (put name of a state) => will provide details of any parti
 If you want to destroy one particular resource=> $terraform destroy -target (resource name).  
 If you want to deploy one particular resource=> $terraform apply -target (resource name).  
 
-Terraform Variable:  
+# Terraform Variable:  
 1.If you don't assign value of a variable, after running terraform apply it will ask for value.  
 2.You can assign value of a variable through command line: $terraform apply -var “value”.  
 3.You can assign value of a variable by creating a separate file named terraform.tfvars.  
