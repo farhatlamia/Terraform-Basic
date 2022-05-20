@@ -16,10 +16,10 @@ Download VScode from https://code.visualstudio.com/
 
 # Terraform Overview:
  
-Language: hashicorp configuration language.
-File extension: .tf .
-AWS Provider: https://registry.terraform.io/providers/hashicorp/aws/latest/docs .
-Region: means where AWS data center is, check your region from your AWS management console.
+Language: hashicorp configuration language.   
+File extension: .tf  
+AWS Provider: https://registry.terraform.io/providers/hashicorp/aws/latest/docs   
+Region: means where AWS data center is, check your region from your AWS management console.  
 
 Configure the AWS Provider
 provider "aws" {
@@ -29,17 +29,17 @@ provider "aws" {
 }
 
 
-How to deploy an EC2 instance within AWS?
-EC2 is just a virtual machine within AWS (you can deploy windows, linx, database etc within AWS)
-Purpose of deploying EC2 - EC2 is a service that enables business subscribers to run application programs in the computing environment. (https://www.techtarget.com/searchaws/definition/Amazon-EC2-instances )
-There are two ways- you can do it from AWS console or from terraform.
- From AWS console- Go to EC2 instance- launch instance
- From terraform 
-- declare resource
-- execute command - [terraform init, terraform plan, terraform apply]
-     - 	Modify resources [ add tags if you want to put name of your instance]
-     - 	Destroy resources [$terraform destroy]
-     -   	Reference resources [when you create a subnet under a vpc you can reference that vpc using vpc id like: vpc_id     = aws_vpc.first-vpc.id]
+How to deploy an EC2 instance within AWS?  
+EC2 is just a virtual machine within AWS (you can deploy windows, linx, database etc within AWS)  
+Purpose of deploying EC2 - EC2 is a service that enables business subscribers to run application programs in the computing environment.  (https://www.techtarget.com/searchaws/definition/Amazon-EC2-instances )  
+There are two ways- you can do it from AWS console or from terraform.  
+ From AWS console- Go to EC2 instance- launch instance  
+ From terraform   
+- declare resource  
+- execute command - [terraform init, terraform plan, terraform apply]  
+     - 	Modify resources [ add tags if you want to put name of your instance]  
+     - 	Destroy resources [$terraform destroy]  
+     -   	Reference resources [when you create a subnet under a vpc you can reference that vpc using vpc id like: vpc_id     = aws_vpc.first-vpc.id]  
 
 
 resource "aws_instance" "first-server" {
