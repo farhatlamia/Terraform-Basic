@@ -69,9 +69,9 @@ resource "aws_vpc" "first-vpc" {
 }  
 
 
-Terraform files:
-.terraform=> terraform init create this, it installs all plugins necessary for the code to run.
-terraform.tfstate=> whenever we create any resource terraform stores that in this state file.
+Terraform files:  
+.terraform=> terraform init create this, it installs all plugins necessary for the code to run.  
+terraform.tfstate=> whenever we create any resource terraform stores that in this state file.  
 
 
 # Project Step:
